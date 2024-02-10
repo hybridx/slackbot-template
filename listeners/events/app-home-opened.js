@@ -3,6 +3,7 @@ const { logger } = require('../../utils/logger');
 const appHomeOpenedCallback = async ({ client, event }) => {
   // Ignore the `app_home_opened` event for anything but the Home tab
   if (event.tab !== 'home') return;
+  logger.trace('event');
 
   try {
     await client.views.publish({

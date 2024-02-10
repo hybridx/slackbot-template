@@ -1,8 +1,12 @@
-import { axios } from 'axios';
+const axios = require('axios');
 
-const instance = axios.create({
-  baseURL: 'https://api.example.com',
+const axiosConfigInstance = axios.create({
+  baseURL: process.env.BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+    rejectUnauthorized: 'false',
+  },
 });
 
-instance.defaults.baseURL = 'https://api.example.com';
-instance.defaults.headers.post['Content-Type'] = 'application/json';
+module.exports = { axiosConfigInstance };

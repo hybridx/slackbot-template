@@ -3,6 +3,7 @@ const { logger } = require('../../utils/logger');
 const sampleShortcutCallback = async ({ shortcut, ack, client }) => {
   try {
     const { trigger_id } = shortcut;
+    logger.trace('shortCut');
 
     await ack();
     await client.views.open({

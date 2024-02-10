@@ -1,7 +1,7 @@
+require('dotenv').config();
 const { App } = require('@slack/bolt');
 const { logger } = require('./utils/logger');
 const { registerListeners } = require('./listeners');
-require('dotenv').config();
 
 /** Initialization */
 const app = new App({

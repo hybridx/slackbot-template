@@ -3,6 +3,7 @@ const { logger } = require('../../utils/logger');
 const sampleActionCallback = async ({ ack, client, body }) => {
   try {
     await ack();
+    logger.trace('client');
     await client.views.update({
       view_id: body.view.id,
       hash: body.view.hash,
