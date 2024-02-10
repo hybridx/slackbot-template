@@ -1,6 +1,6 @@
 {
   "display_information": {
-    "name": "JiraGPT"
+    "name": "Test"
   },
   "features": {
     "app_home": {
@@ -9,35 +9,10 @@
       "messages_tab_read_only_enabled": false
     },
     "bot_user": {
-      "display_name": "JiraGPT",
+      "display_name": "Test",
       "always_online": true
     },
-    "slash_commands": [
-      {
-        "command": "/groom",
-        "description": "Grooms a Jira ticket",
-        "usage_hint": "DEE-1234678",
-        "should_escape": false
-      },
-      {
-        "command": "/update",
-        "description": "Updates the jira ticket with comment",
-        "usage_hint": "DEE-12356789 Added a new bot",
-        "should_escape": false
-      },
-      {
-        "command": "/find",
-        "description": "Find information for documents",
-        "usage_hint": "what is SPAship",
-        "should_escape": false
-      },
-      {
-        "command": "/echo",
-        "description": "The echo command simply echoes on command",
-        "usage_hint": "Hello World",
-        "should_escape": false
-      }
-    ]
+    "slash_commands": []
   },
   "oauth_config": {
     "scopes": {
