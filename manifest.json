@@ -11,8 +11,7 @@
     "bot_user": {
       "display_name": "Test",
       "always_online": true
-    },
-    "slash_commands": []
+    }
   },
   "oauth_config": {
     "scopes": {
