@@ -41,7 +41,6 @@
   },
   "oauth_config": {
     "scopes": {
-      "user": ["admin"],
       "bot": [
         "app_mentions:read",
         "channels:history",
